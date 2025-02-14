@@ -1,0 +1,5 @@
+rest-client:
+  nbp-base-url: http://localhost:${wiremock.server.port}/nbp/api
+
+wiremock:
+  reset-mappings-after-each-test: true

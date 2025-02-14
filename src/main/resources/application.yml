@@ -1,0 +1,25 @@
+server:
+  servlet:
+    context-path: /currency-exchanger
+  error:
+    include-message: always
+
+spring:
+  datasource:
+    url: jdbc:h2:file:/data/currencyexchanger
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    generate-ddl: true
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
+
+rest-client:
+    nbp-base-url: https://api.nbp.pl/api
+
+logging:
+  level:
+    root: INFO

@@ -1,0 +1,25 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/nbp/api/exchangerates/rates/c/eur/today"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "table": "C",
+      "currency": "euro",
+      "code": "EUR",
+      "rates": [
+        {
+          "no": "029/C/NBP/2025",
+          "effectiveDate": "2025-02-12",
+          "bid": 4.1321,
+          "ask": 4.2155
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

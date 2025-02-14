@@ -1,0 +1,31 @@
+### Create account
+POST {{client.host.url}}/account
+Content-Type: application/json
+
+{
+  "name": "Michal",
+  "surname" : "Derewecki",
+  "balanceInPln": "1000.00"
+}
+
+### Exchange from pln
+POST {{client.host.url}}/account/603/exchange-from-pln
+Content-Type: application/json
+
+{
+  "amount": "50",
+  "currency": "USD"
+}
+
+### Exchange to pln
+POST {{client.host.url}}/account/1/exchange-to-pln
+Content-Type: application/json
+
+{
+  "amount": "50",
+  "currency": "USD"
+}
+
+### Get account
+GET {{client.host.url}}/account/1
+Content-Type: application/json
